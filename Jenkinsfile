@@ -11,6 +11,8 @@ pipeline {
 
       steps {
         echo 'Building'
+        powershell returnStatus: true, script: '.\\updatechromecomponents.ps1'
+        
         }
     }
      
